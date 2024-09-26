@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virohana</title>
+    <style>
+        /* Add your CSS styles here */
+        /* This is just a basic example */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative; /* Add this line */
+        }
+
+        .after_header {
+            background-color: lavender;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            font-size: xx-large;
+
+        }
+
+        .logo {
+            position: absolute; /* Add this line */
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            width: 50px;
+            height: 40px;
+        }
+        .doctor_image_container{
+            overflow: hidden;
+            /*position: center; /* Add this line */
+            
+
+            
+        }
+        .doctor_image_container img{
+            width:730px;
+            height:500px;
+            padding: 0px; /* Adjust padding as needed */
+            /*border: 0px solid #ccc; /* Optional: Add border for visibility */
+
+        }
+
+        .button-box-container {
+            background-color: plum;
+            display: flex;
+            justify-content: space-between;
+            /*margin-top: 20px;*/
+            height: 200px;
+            
+            
+        }
+
+        .button-box {
+            flex: 1;
+            margin: 0 5px;
+    
+        }
+
+        
+        .transparent-button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: lavender; /* Optional: Set text color */
+            padding: 1% 20px; /* Adjust padding as needed */
+            font-size: 16px; /* Adjust font size as needed */
+            cursor: pointer; /* Add cursor style */
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Optional: Add transition effect */
+            position: absolute;
+            margin-bottom: 20px;
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+
+        .transparent-button:hover {
+            background-color: purple;
+            color: white; /* Optional: Change text color on hover */
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #image-upload {
+            margin-bottom: 20px;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://freepngtransparent.com/wp-content/uploads/2023/03/circle-png-169.png"  alt="Apollo Staff Logo" class="logo" ><a href="#home"></a> <!-- Add this line -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Chat.html">Chat</a></li>
+                <li><a href="Doctor.html">Doctors Near Me</a></li>
+                <li><a href="NeedHelp.html">Need Help?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="after_header">
+        Welcome to Virohana
+    </div>
+    <div class="doctor_image_container">
+        <img src="https://www.shutterstock.com/image-photo/successful-team-medical-doctors-looking-600nw-582888679.jpg" alt="doctors" class="doctor_image">
+        <img src="https://premierdermde.com/wp-content/uploads/2018/03/Dermatology-300x200.jpg" alt="doctors" class="doctor_image">
+    </div>
+    
+    <div class="button-box-container">
+        <div class="button-box">
+            <a href="Doctor.html" class="transparent-button">Need a Doctor?</a>
+
+
+        </div>
+        <div class="button-box" style="background-color: purple;">
+            
+            <a href="Chat.html" class="transparent-button">To Chat with Virohana?</a>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

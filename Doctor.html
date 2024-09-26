@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors in your area</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            background-color: lavender;
+        }
+    
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative; /* Add this line */
+            
+        }
+    
+    
+        .logo {
+            position: absolute; /* Add this line */
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            width: 50px;
+            height: 40px;
+        }
+        nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+    
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+    
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+    
+            #image-upload {
+                margin-bottom: 20px;
+            }
+    
+            #result {
+                margin-top: 20px;
+            }
+            .transparent-button {
+                background-color: transparent;
+                border: 2px solid white;
+                color: lavender; /* Optional: Set text color */
+                padding: 1% 20px; /* Adjust padding as needed */
+                font-size: 16px; /* Adjust font size as needed */
+                cursor: pointer; /* Add cursor style */
+                transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Optional: Add transition effect */
+                position: absolute;
+                margin-bottom: 20px;
+                margin-left: 250px;
+                margin-top: 50px;
+            }
+    
+            .transparent-button:hover {
+                background-color: purple;
+                color: white; /* Optional: Change text color on hover */
+            }
+            .button-box-container {
+                background-color: plum;
+                display: flex;
+                justify-content: space-between;
+                /*margin-top: 20px;*/
+                height: 200px;
+                
+                
+            }
+    
+            .button-box {
+                flex: 1;
+                margin: 0 5px;
+        
+            }
+            .doctor-list{
+                color: plum;
+                margin-left: 40px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: larger;
+                position: absolute;
+            }
+            .img-container{
+                margin:40px;
+                width:100px;
+                height:100px;
+            }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://freepngtransparent.com/wp-content/uploads/2023/03/circle-png-169.png"  alt="Apollo Staff Logo" class="logo" ><a href="#home"></a> <!-- Add this line -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="Chat.html">Chat</a></li>
+                <li><a href="Doctor.html">Doctors Near Me</a></li>
+                <li><a href="NeedHelp.html">Need Help?</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <img class ='img-container' src="https://pngimg.com/uploads/doctor/small/doctor_PNG16030.png" alt="Doctor-Image">
+    <br>
+    <br>
+    <div id="doctors-list" class="doctor-list"></div>
+    <script src="location.js"></script>
+</body>
+</html>
